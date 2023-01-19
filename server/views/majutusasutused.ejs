@@ -32,7 +32,7 @@
 
           <% hotel_data.forEach(currentHotel => {%>
             <% console.log(`hoteldata ${hotel_data.length}`) %>
-            <a href="/hotellid/<%= currentHotel["id"] %>">
+            <a href="/hotell/<%= currentHotel["id"] %>">
               <div style="width: 256px; margin-left:50px; ; border: solid red; color: white;">
                 <span><%= currentHotel['Nimi'] %></span>
                 <img style="width: 250px; height: 250px;" src="/images/<%=currentHotel['Pildid']%>"></img></div>
