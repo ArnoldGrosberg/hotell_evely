@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+    integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Main header -->
+  <header class="flexbox-container form">
+
+    <!-- Logo (text+image) -->
+    <a href="/">
+      <div class="logo flexbox-container">
+
+        <div class="name">
+          <span class="company_name">Teenuse nimi</span>
+        </div>
+        <div class="img">
+          <img class="company_img" draggable="false" src="../images/logo.jpg" alt="logo">
+        </div>
+        
+      </div>
+    </a>
+
+    <!-- Navbar area -->
+    <div class="navbar">
+
+      <a class="left" href="lisa_majutus">Lisa oma majutusasutus</a>
+      <a class="center" href="login">Logi sisse</a>
+
+    </div>
+
+  </header>
+  <div class="v52_56">
+    <div style="text-align: center; border-radius: 25%; background-color: rgba(68, 119, 251, 1); margin-left: 600px; margin-right: 600px;">
+      <form style="display: inline-block; margin-top: 40px; color: white;">
+        <div class="col-md-4 mb-3">
+          <label for="validationServer01">Eesnimi</label><br>
+          <input type="text" class="form-control-lg" style="width: 350px;" id="validationServer01"
+            placeholder="Eesnimi">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationServer02">Perenimi</label><br>
+          <input type="text" class="form-control-lg" style="width: 350px" id="validationServer02"
+            placeholder="Perenimi">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationServer02">Isikukood</label><br>
+          <input type="number" class="form-control-lg" style="width: 350px" id="validationServer02"
+            placeholder="Isikukood" min="0">
+        </div><br>
+        <div class="col-md-4 mb-3">
+          <label class="form-check-label" for="exampleCheck1">Algusaeg</label><br>
+          <input type="text" class="date form-control-lg" style="width: 350px" placeholder="Algusaeg" />
+          <script type="text/javascript">
+            $(".date").datepicker({
+              format: "dd-mm-yyyy",
+            });
+          </script><br>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <label class="form-check-label" for="exampleCheck1">Lõppaeg</label><br>
+            <input type="text" class="date form-control-lg" style="width: 350px" placeholder="Lõppaeg" />
+            <script type="text/javascript">
+              $(".date").datepicker({
+                format: "dd-mm-yyyy",
+              });
+            </script><br>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Erisoovid</label><br>
+            <textarea class="form-control-lg" id="exampleFormControlTextarea1" rows="3" style="width: 350px"
+              placeholder="Erisoovid"></textarea>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div style="text-align: center;">
+    <button type="submit" class="btn btn-primary" style="text-align: center; width: 350px; font-size: 25px; margin-top: 0.5%;"><a href="broneeringud" style="color:white">Broneeri
+      hotelli ruum</a></button>
+  </div>
+  </form>
+  </div>
+</body>
+
+</html> <br /><br />

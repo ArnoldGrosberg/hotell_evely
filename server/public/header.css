@@ -1,0 +1,108 @@
+.terveHeader2 {
+    width: 100%;
+    height: 104px;
+    background: url("../images/v7_212.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+.terveHeader {
+    width: 100%;
+    height: 104px;
+    background: rgba(68, 48, 251, 1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+.header {
+    width: 752px;
+    height: 42px;
+    background: url("../images/v7_111.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 2rem;
+    margin-left: 50%;
+    overflow: hidden;
+  }
+/*origi*/
+.headerOsa1 {
+    width: 199px;
+    height: 42px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .headerOsa2 {
+    width: 199px;
+    height: 42px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .headerOsa3 {
+    width: 260px;
+    height: 42px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .login_redirect {
+    width: 199px;
+    height: 42px;
+    background: url("../images/v7_115.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 307px;
+    overflow: hidden;
+  }
+  /* register_here */
+  .register_redirect {
+    width: 199px;
+    height: 42px;
+    background: url("../images/v7_112.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 553px;
+    overflow: hidden;
+  }
+  /* lisa_majutus_here */
+  .lisa_majutus_redirect {
+    width: 260px;
+    height: 42px;
+    background: url("../images/v7_118.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    color: black;
+  }
