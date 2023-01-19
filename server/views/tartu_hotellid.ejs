@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tartu_hotellid.css" rel="stylesheet">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main header -->
+  <header class="flexbox-container form" style="margin-bottom: 30px; margin-left: 35%">
+
+    <!-- Logo (text+image) -->
+    <a href="/">
+      <div class="logo flexbox-container">
+
+        <div class="name">
+          <span class="company_name">Teenuse nimi</span>
+        </div>
+        <div class="img">
+          <img class="company_img" draggable="false" src="../images/logo.jpg" alt="logo">
+        </div>
+        
+      </div>
+    </a>
+
+    <!-- Navbar area -->
+    <div class="navbar">
+
+      <a class="left" href="lisa_majutus">Lisa oma majutusasutus</a>
+      <a class="center" href="login">Logi sisse</a>
+
+    </div>
+
+  </header>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <!--OTSING-->
+        <div class="navtext">Sihtkoht/majutusasutus</div>
+        <div class="Otsing">
+            <input type="search" placeholder="Otsing" />
+            <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+        <div class="navtext">Tärnide arv
+            <div style="background-color:grey">
+                <div class="navtext"> <input type="checkbox">3 tärni</div>
+                <div class="navtext"> <input type="checkbox">4 tärni</div>
+                <div class="navtext"> <input type="checkbox">5 tärni</div>
+                <div class="navtext"> <input type="checkbox">Reitinguta</div>
+            </div>
+            <div class="navtext">Mugavused</div>
+            <div style="background-color:grey">
+                <div class="navtext"> <input type="checkbox">Parkimine</div>
+                <div class="navtext"> <input type="checkbox">Toateenindus</div>
+                <div class="navtext"> <input type="checkbox">Restoran</div>
+                <div class="navtext"> <input type="checkbox">Reitinguta</div>
+            </div>
+            <div class="navtext">Toa mugavused</div>
+            <div style="background-color:grey">
+                <div class="navtext"> <input type="checkbox">Köök</div>
+                <div class="navtext"> <input type="checkbox">Konditsioneer</div>
+                <div class="navtext"> <input type="checkbox">Vann</div>
+                <div class="navtext"> <input type="checkbox">Rõdu</div>
+            </div>
+        </div>
+    </div>
+    <!--HOTELLID-->
+    <div style="margin-left: 35%; color: white; font-size: 30px;">
+        <% hotel_data.forEach(currentHotel => {%>
+            <% console.log(`hoteldata ${hotel_data.length}`) %>
+        <div style="background-color: #4478fc; margin-bottom: 1%">
+
+            <div style="display: flex;
+            justify-content: left;
+            align-items: left;
+            padding-left: 5%;
+            ">
+                <div style="float:left; margin-top: 20px;"><a href="/hotell/<%= currentHotel.id %>"><img src="<%= currentHotel.Pildid %>" width="75%"
+                        height="auto"></a>
+                    <div style="float:auto; margin-top: 2%">
+                        <div style="margin-right: 50px;">Kirjeldus: <%- currentHotel.Kirjeldus %></div>
+                        <div style="margin-bottom: 2%;">Reiting: <%- currentHotel.Mitu_tärni %></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%});%>
+    </div>
+</body>
+
+</html>

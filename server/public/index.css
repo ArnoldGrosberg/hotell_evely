@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    text-decoration: none;
+  }
+a {
+  text-decoration: none;
+}
+  span, a, input {
+    font-family: Inter;
+  }
+
+  header {
+    background: rgba(68, 48, 251, 1);
+    color: white;
+  }
+
+  header.form {
+    margin-bottom: 175px;
+  }
+
+  /* navbar buttons */
+  .navbar a {
+    color: rgba(68, 48, 251, 1);
+    background: white;
+    font-size: 20px;
+
+    padding: 15px;
+  }
+
+
+  /* Only affects 'a' tags with the class 'left' that are children of elements with the 'navbar' class.*/
+  .navbar a.left {
+    margin-right: 20px;
+  }
+
+  .navbar a.center {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .navbar a.right {
+    margin-left: 20px;
+  }
+
+  .flexbox-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .company_name {
+    font-weight: Bold;
+    font-size: 40px;
+    color: white;
+  }
+
+  .company_img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  .index-search {
+    background: rgba(68, 119, 251, 1);
+    width: auto;
+    height: 400px;
+  }
+
+
+  .search-bar {
+    width: 250px;
+    height: 75px;
+    
+    padding: 0;
+    border: 0;
+
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .search-bar:active {
+    border: red;
+  }
+
+  .search-button {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 0;
+    border: 0;
+
+    padding: 0;
+  }
+
+  .locations-container {
+    background: whitesmoke;
+    width: auto;
+    height: 500px;
+  }
+
+  .locations-content {
+    background: rgba(68, 119, 251, 1);
+  }
