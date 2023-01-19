@@ -106,8 +106,13 @@ app.get('/ruum/:id', (req, res) => {
   con.connect(function(err) {
     const query = "SELECT * FROM RUUM WHERE Id="+req.params.id
     con.query(query, function(err, result, fields) {
+      console.log(result.length == 0)
+      if (result.length == 0){
+        res.send("Ruumi ei eksisteeri")
+      } else {
       //res.render('ruum', {Ruumi_liik: result[0].Ruumi_liik, milles_majutusasutuses: 'Vaja on Hotelli FK Id-t', Ruumi_pilt: result[0].Pildid, Mida_veel: result[0].Mida_veel, WC: result[0].Kas_WC, televiisor: result[0].Kas_televiisor, duss: result[0].Kas_duss, Mitu_voodikohta: result[0].Mitu_voodikohta, Mitu_lisakohta: result[0].Mitu_lisakohta})
       res.render('ruum', { hotel_data: result[0] })
+    }
     })
     })
 });
